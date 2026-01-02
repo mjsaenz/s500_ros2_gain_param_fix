@@ -54,7 +54,7 @@ The topic can be changed via the sonar_topic parameter.
 | `fov` | `0.0872665` | FOV of the sonar transmission. Not used explicitly but put here for data |
 | `speed_of_sound` | `1500000` | Speed of sound in medium such as water in `mm/s` |
 | `auto_mode` | `true` | Whether to automatically determine gain, min, and max ranges |
-| `gain` | `0.6` | Gain of the scan when in manual mode |
+| `gain_index` | `0` | Index of the gain setting of the scan when in manual mode. Valid indices are `0-13`. Index-gain correspondences are as follows: `{0: 3.98, 1: 7.96, 2: 15.92, 3: 19.90, 4: 31.84, 5: 39.80, 6: 63.68, 7: 219.2, 8: 438.4, 9: 548.0, 10: 876.8, 11: 1096, 12: unknown, 13: unknown}`|
 | `min_range` | `0` | Min range of scan in mm when in manual mode |
 | `max_range` | `5000` | Max range of scan in mm when in manual mode |
 
