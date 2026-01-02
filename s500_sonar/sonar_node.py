@@ -17,7 +17,7 @@ class sonar_node(Node):
             "fov": self.declare_parameter('fov', 0.0872665).value, # s500 has fov of 5 degrees or 0.0872665 rad
             "speed_of_sound": self.declare_parameter('speed_of_sound', 1500000).value, # Speed of Sound [mm/s] : Water (1500000 mm/s), Air (340000 mm/s)
             "auto_mode": self.declare_parameter('auto_mode', 'true').value, # Whether s500 automatically sets gain and scan range
-            "gain": self.declare_parameter('gain', -1).value, # Gain for s500 if auto_mode = false
+            "gain_index": self.declare_parameter('gain_index', 0).value, # Gain index for s500 if auto_mode = false, valid indices are 0-13
             "min_range": self.declare_parameter('min_range', 0).value, # Min range if auto_mode = false [mm]
             "max_range": self.declare_parameter('max_range', 5000).value, # Max range if auto_mode = false [mm]
             "comm_type": self.declare_parameter('comm_type', 'serial').value, # serial or udp

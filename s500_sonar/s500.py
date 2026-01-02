@@ -47,8 +47,8 @@ class s500_sonar:
             else:
                 if sonar.set_mode_auto(0, True):
                     sonar.set_range(params.get("min_range"), params.get("max_range"), False)
-                    sonar.set_gain_setting(params.get("gain"), False)
-                    logger.info("S500 set to manual mode with range [%f:%f]mm and gain: %f" % (params.get("min_range"), params.get("max_range"), params.get("gain")))
+                    sonar.set_gain_setting(params.get("gain_index"), False)
+                    logger.info("S500 set to manual mode with range [%f:%f]mm and gain index: %f" % (params.get("min_range"), params.get("max_range"), params.get("gain_index")))
                 else:
                     logger.warn("Unable to set manual mode on device")
             
